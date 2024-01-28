@@ -25,16 +25,7 @@ const GlobalContext = createContext<ContextProps>({
 
 export const GlobalProvider = ({ children }: { children: ReactNode }) => {
   const [step, setStep] = useState(1)
-  const [data, setData] = useState<DataForm[]>([
-    {
-      name: 'John Doe',
-      email: 'john@example.com',
-      tel: '123456789',
-      plan: 1,
-      plusAdd: 0,
-      total: 10,
-    },
-  ])
+  const [data, setData] = useState<DataForm[]>([])
   return (
     <GlobalContext.Provider value={{ step, setStep, data, setData }}>
       {children}

@@ -1,8 +1,8 @@
 export interface DataForm {
-  name: string
-  email: string
-  tel: string
-  plan: number
-  plusAdd: number
-  total: number
+  userName: string
+  userEmail: string
+  userPhone: string
+  userPlan: string
+  userPlusAdd: number
+  userTotal: number
 }
